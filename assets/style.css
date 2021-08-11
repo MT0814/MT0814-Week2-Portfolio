@@ -1,0 +1,189 @@
+:root {
+  --outer-space: rgb(48, 46, 46);
+  --gin: rgb(143, 127, 202);
+  --light: white;
+  --header: rgb(204, 190, 253);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-color: var(--outer-space);
+  }
+
+
+
+.header {
+  display: flex;
+  /* Defines how to distribute the empty space between child elements */
+  justify-content: space-between;
+  padding: 25px;
+  background: var(--header);
+  color: #fff;
+  }
+
+.header h1 {
+    display: inline-block;
+    font-size: 2em;
+    font-weight: lighter;
+    text-align: left;
+  }
+
+.header h1 .port {
+    color: var(--gin);
+  }
+
+.header nav {
+    background-color: var(--gin);
+  }
+  
+
+.header nav ul {
+    list-style-type: none;
+    display: flex;
+  }
+
+.header nav ul li {
+    display: inline-block;
+  }
+  
+a {
+    color: var(--light);
+    text-decoration: none;
+  }
+ 
+main {
+    /* Turns this element into a flexbox */
+    display: flex;
+    /* Forces elements to the next line if they don't fit */
+    flex-wrap: wrap;
+    margin-top: 2%;
+  
+}
+
+img {
+  border: 2px solid var(--gin);
+  border-radius: 8px;
+  padding: 5px;
+  max-width: 30%;
+  height: 60%;
+}
+
+img:hover {
+  box-shadow: 0 0 3px 2px rgb(190, 158, 240);
+}
+
+
+h2 {
+  font-size: 1.5em;
+  color: var(--gin);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+}
+
+h3 {
+  font-size: 1em;
+  color: var(--gin);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+}
+.card {
+  flex: 1 0 200px;
+  padding: 10px;
+  margin-left: 250px;
+  text-align: left;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.about {
+  text-align:center;
+  color:#102C4E;
+  margin-top: 150px;
+  margin-bottom:70px;
+  font-size: 35px;
+}
+
+
+.about h2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+p {
+  color: var(--light);
+  margin: 20px;
+  display: inline-block;
+  line-height: 1.5em;
+  width:100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.work h2 {
+  margin: 0.4em;
+  padding: 0;
+}
+
+.expertise {
+  margin: 0.1em;
+  padding: 0;
+}
+
+li{
+  color: var(--light);
+  margin: 20px;
+  display: inline-block;
+  line-height: 0.1em;
+  width:100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.expertise h3 ul {
+  list-style-type: none;
+}
+.contact {
+  margin: 1em;
+  padding: 0;
+}
+
+
+form {
+  color: var(--light);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+}
+
+input:hover {
+  box-shadow: 0 0 3px 2px rgb(190, 158, 240);
+}
+
+textarea {
+  height: 10em;
+  width: 29em;
+  margin: 10px;
+  margin-left: 24px;
+}
+
+textarea:hover {
+  box-shadow: 0 0 3px 2px rgb(190, 158, 240);
+}
+
+.footer h4{
+  color: var(--light);
+  font-weight: lighter;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+
+}
+
+@media screen and (max-width: 992px) {
+  
+}
+
