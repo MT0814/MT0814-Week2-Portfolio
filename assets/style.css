@@ -1,8 +1,8 @@
 :root {
-  --outer-space: rgb(48, 46, 46);
-  --gin: rgb(143, 127, 202);
   --light: white;
-  --header: rgb(204, 190, 253);
+  --purple: rgb(94, 73, 214);
+  --dark: black;
+  --header: linear-gradient(to right, black,rgb(94, 73, 214));
 }
 
 * {
@@ -12,9 +12,8 @@
 }
 
 body {
-    background-color: var(--outer-space);
+    background-color: var(--light);
   }
-
 
 
 .header {
@@ -29,18 +28,16 @@ body {
 .header h1 {
     display: inline-block;
     font-size: 2em;
-    font-weight: lighter;
+    font-weight: 200;
     text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.085em;
   }
 
 .header h1 .port {
-    color: var(--gin);
+    color: var(--light);
   }
 
-.header nav {
-    background-color: var(--gin);
-  }
-  
 
 .header nav ul {
     list-style-type: none;
@@ -61,12 +58,12 @@ main {
     display: flex;
     /* Forces elements to the next line if they don't fit */
     flex-wrap: wrap;
-    margin-top: 2%;
+    margin-top: 10px;
   
 }
 
 img {
-  border: 2px solid var(--gin);
+  border: 2px solid var(--purple);
   border-radius: 8px;
   padding: 5px;
   max-width: 30%;
@@ -80,17 +77,20 @@ img:hover {
 
 h2 {
   font-size: 1.5em;
-  color: var(--gin);
+  color: var(--dark);
   font-family: Arial, Helvetica, sans-serif;
   margin: 10px;
+  letter-spacing: 0.085em;
 }
 
 h3 {
   font-size: 1em;
-  color: var(--gin);
+  color: var(--dark);
   font-family: Arial, Helvetica, sans-serif;
   margin: 10px;
+  letter-spacing: 0.085em;
 }
+
 .card {
   flex: 1 0 200px;
   padding: 10px;
@@ -100,28 +100,15 @@ h3 {
   border-width: 1px;
 }
 
-.about {
-  text-align:center;
-  color:#102C4E;
-  margin-top: 150px;
-  margin-bottom:70px;
-  font-size: 35px;
-}
-
-
-.about h2 {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 
 p {
-  color: var(--light);
-  margin: 20px;
+  color: var(--dark);
+  margin: 10px;
   display: inline-block;
   line-height: 1.5em;
   width:100%;
   font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
 }
 
 .work h2 {
@@ -135,13 +122,16 @@ p {
 }
 
 li{
-  color: var(--light);
+  color: var(--dark);
   margin: 20px;
   display: inline-block;
   line-height: 0.1em;
   width:100%;
   font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.085em;
+  float: left;
 }
+
 
 
 .expertise h3 ul {
@@ -154,9 +144,14 @@ li{
 
 
 form {
-  color: var(--light);
+  color: var(--dark);
   font-family: Arial, Helvetica, sans-serif;
   margin: 10px;
+}
+
+input {
+  margin: 10px;
+  width: 10.5em;
 }
 
 input:hover {
@@ -166,16 +161,21 @@ input:hover {
 textarea {
   height: 10em;
   width: 29em;
-  margin: 10px;
-  margin-left: 24px;
+  margin-top: 10px;
+  margin-left: 34px;
 }
 
 textarea:hover {
   box-shadow: 0 0 3px 2px rgb(190, 158, 240);
 }
 
+#submit {
+  margin: 10px;
+  width: 5em;
+}
+
 .footer h4{
-  color: var(--light);
+  color: var(--dark);
   font-weight: lighter;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
