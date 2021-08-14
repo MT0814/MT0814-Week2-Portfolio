@@ -1,8 +1,8 @@
 :root {
   --light: white;
-  --purple: rgb(94, 73, 214);
-  --dark: black;
-  --header: linear-gradient(to right, black,rgb(94, 73, 214));
+  --dark: gray;
+  --header: linear-gradient(to right, rgb(255, 154, 22), rgb(255, 222, 162));
+  --font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 * {
@@ -11,142 +11,171 @@
   box-sizing: border-box;
 }
 
-body {
-    background-color: var(--light);
-  }
-
+html {
+  height: 100%;
+}
 
 .header {
   display: flex;
-  /* Defines how to distribute the empty space between child elements */
   justify-content: space-between;
   padding: 25px;
   background: var(--header);
-  color: #fff;
-  }
+  color: var(--light);
+}
 
 .header h1 {
-    display: inline-block;
-    font-size: 2em;
-    font-weight: 200;
-    text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 0.085em;
-  }
-
-.header h1 .port {
-    color: var(--light);
-  }
-
+  text-align: left;
+  letter-spacing: 0.3em;
+  font-family: var(--font);
+  font-weight: lighter;
+}
 
 .header nav ul {
-    list-style-type: none;
-    display: flex;
-  }
+  display: flex;
+  flex-direction: row;
+}
 
-.header nav ul li {
-    display: inline-block;
-  }
-  
-a {
-    color: var(--light);
-    text-decoration: none;
-  }
- 
+.header nav ul li a {
+  display: inline-block;
+  color: var(--light);
+  text-decoration: none;
+  font-size: 1.13em;
+  font-weight: lighter;
+  letter-spacing: 0.3em;
+}
+
 main {
-    /* Turns this element into a flexbox */
-    display: flex;
-    /* Forces elements to the next line if they don't fit */
-    flex-wrap: wrap;
-    margin-top: 10px;
-  
+  display: flex;
 }
 
-img {
-  border: 2px solid var(--purple);
-  border-radius: 8px;
-  padding: 5px;
-  max-width: 30%;
-  height: 60%;
-}
-
-img:hover {
-  box-shadow: 0 0 3px 2px rgb(190, 158, 240);
-}
-
-
-h2 {
-  font-size: 1.5em;
-  color: var(--dark);
-  font-family: Arial, Helvetica, sans-serif;
+aside {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
   margin: 10px;
-  letter-spacing: 0.085em;
+  padding: 15px;
 }
 
-h3 {
-  font-size: 1em;
+.aside-text {
   color: var(--dark);
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 10px;
-  letter-spacing: 0.085em;
-}
-
-.card {
-  flex: 1 0 200px;
+  font-family: var(--font);
+  letter-spacing: 0.15em;
+  text-align: right;
+  width: 100%;
   padding: 10px;
-  margin-left: 250px;
-  text-align: left;
-  border-style: solid;
-  border-width: 1px;
+  line-height: 14em;
+  border-right: 3px solid rgb(255, 230, 184);
+  height: 500px;
 }
 
+section {
+  flex: 70%;
+  background-color: var(--light);
+  padding: 20px;
+  margin: 10px;
+  margin-top: 25px;
+  text-align: left;
+  margin-right: 30px;
+}
 
 p {
   color: var(--dark);
   margin: 10px;
+  line-height: 2.5em;
+  font-family: var(--font);
+  width: 100%;
+  font-size: 1.1em;
+}
+
+#image-section {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 60% 20% 20%;
+}
+
+.image {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+}
+
+#image1 {
+  grid-row: 1;
+  grid-column: span 2;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 154, 22);
+  letter-spacing: 0.1em;
+}
+
+img {
+  width: 100%;
+  margin: 10px;
+  border: 3px solid rgb(255, 230, 184);
+  /* opacity: 1; */
+}
+
+/* .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  transition: 0.5s ease;
+  background-color: black;
+} */
+
+img:hover {
+  border: 3px solid rgb(22, 255, 236);
+}
+
+#uximage {
+  width: 97%;
+}
+
+h2 {
+  font-size: 1.1em;
+}
+
+h3 {
+  font-family: var(--font);
+  font-weight: lighter;
+  position: relative;
+  bottom: 44px;
+  background-color: rgb(255, 230, 184);
+  color: gray;
+  left: 1em;
+  font-size: 0.9em;
+  letter-spacing: 0.12em;
+}
+
+li {
+  color: rgb(255, 154, 22);
+  margin: 10px;
   display: inline-block;
-  line-height: 1.5em;
-  width:100%;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: left;
+  font-family: var(--font);
+  letter-spacing: 0.1em;
 }
 
-.work h2 {
-  margin: 0.4em;
-  padding: 0;
+ul {
+  text-align: center;
 }
-
-.expertise {
-  margin: 0.1em;
-  padding: 0;
+.socialicon {
+  margin-bottom: 10%;
 }
-
-li{
-  color: var(--dark);
-  margin: 20px;
-  display: inline-block;
-  line-height: 0.1em;
-  width:100%;
-  font-family: Arial, Helvetica, sans-serif;
-  letter-spacing: 0.085em;
-  float: left;
-}
-
-
-
-.expertise h3 ul {
-  list-style-type: none;
-}
-.contact {
-  margin: 1em;
-  padding: 0;
-}
-
 
 form {
   color: var(--dark);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font);
   margin: 10px;
+  letter-spacing: 0.1em;
 }
 
 input {
@@ -155,35 +184,67 @@ input {
 }
 
 input:hover {
-  box-shadow: 0 0 3px 2px rgb(190, 158, 240);
+  box-shadow: 0 0 3px 2px rgb(255, 230, 184);
+}
+
+input#fname,
+input#lname,
+textarea#message {
+  font-family: var(--font);
+  letter-spacing: 0.1em;
+}
+
+#fname #lname #message {
+  margin-left: 100px;
 }
 
 textarea {
   height: 10em;
   width: 29em;
   margin-top: 10px;
-  margin-left: 34px;
+  margin-left: 25px;
+  border-radius: 2px;
+  letter-spacing: 0.1em;
 }
 
 textarea:hover {
-  box-shadow: 0 0 3px 2px rgb(190, 158, 240);
+  box-shadow: 0 0 3px 2px rgb(255, 230, 184);
 }
 
 #submit {
   margin: 10px;
   width: 5em;
+  letter-spacing: 0.1em;
 }
 
-.footer h4{
-  color: var(--dark);
+.footer h4 {
+  color: var(--light);
   font-weight: lighter;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font);
   font-size: 0.8em;
-
+  letter-spacing: 0.1em;
+  padding: 10px;
+  background: var(--header);
 }
 
+/* 
 @media screen and (max-width: 992px) {
-  
+  main,
+  nav {
+    flex-direction: column;
+  }
+} */
+
+@media screen and (max-width: 768px) {
+  aside h2 {
+    font-size: 13px;
+  }
 }
 
+/* @media screen and (max-width: 576px) {
+  main,
+  nav {
+    flex-direction: column;
+  }
+} */
