@@ -21,6 +21,8 @@ html {
   padding: 25px;
   background: var(--header);
   color: var(--light);
+  position: fixed;
+  width: 100%;
 }
 
 .header h1 {
@@ -139,7 +141,7 @@ a {
 img {
   width: 100%;
   margin: 10px;
-  border: 3px solid rgb(255, 230, 184);
+  border: 3px solid rgb(255, 184, 166);
   opacity: 0.7;
   transition: 0.3s;
 }
