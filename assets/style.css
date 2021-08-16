@@ -47,7 +47,7 @@ html {
   color: var(--light);
   text-decoration: none;
   font-size: 1.13em;
-  font-weight: lighter;
+  font-weight: normal;
   letter-spacing: 0.2em;
 }
 
@@ -55,20 +55,25 @@ html {
   color: var(--dark);
 }
 
-.subtitle {
-  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/c907fd35452259.56f81712a1af8.gif");
-  height: 400px;
-  margin: 0;
+.subtitle-image {
+  height: 800px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url(./discussions.jpeg);
+  background-size: cover;
+  background-position: center;
+  /* margin-top: 0; */
+  display: flex;
 }
 
 #subtitle-text {
   font-family: var(--font);
   font-size: 1em;
-  font-weight: bold;
+  font-weight: lighter;
   color: var(--light);
   letter-spacing: 0.15em;
   margin-top: 87px;
-  background-color: var(--dark);
+  background-color: gray;
   text-align: right;
 }
 
@@ -95,7 +100,7 @@ aside {
   margin-top: 30px;
   /* line-height: 14em; */
   border-right: 3px solid #fdbebd;
-  height: 500px;
+  height: 30em;
 }
 
 section {
@@ -148,11 +153,11 @@ img {
   margin: 10px;
   border: 3px solid #a4dbff;
   opacity: 0.7;
-  transition: 0.3s;
 }
 
 img:hover {
   box-shadow: 0 0 3px 2px #fdbebd;
+
   opacity: 1;
 }
 
@@ -181,7 +186,7 @@ h3 {
   color: var(--light);
   background-color: #94c6e7;
   left: 1em;
-  font-size: 1.2em;
+  font-size: 0.96em;
   letter-spacing: 0.12em;
 }
 
@@ -256,7 +261,7 @@ textarea {
   height: 2em;
   letter-spacing: 0.1em;
   color: var(--light);
-  background-color: #fdbebd;
+  background-color: #fcaaa8;
   border-radius: 2px;
   border: 1px solid #a4dbff;
   margin-top: 117px;
@@ -270,7 +275,7 @@ textarea {
 
 .footer h4 {
   color: var(--light);
-  font-weight: lighter;
+  font-weight: normal;
   text-align: center;
   font-family: var(--font);
   font-size: 0.8em;
@@ -279,8 +284,7 @@ textarea {
   background: var(--header);
 }
 
-/* 
-@media screen and (max-width: 992px) {
+/* @media screen and (max-width: 992px) {
   main,
   nav {
     flex-direction: column;
@@ -296,8 +300,8 @@ textarea {
     font-size: 0.85em;
   }
 }
-
-/* @media screen and (max-width: 576px) {
+/* 
+@media screen and (max-width: 576px) {
   main,
   nav {
     flex-direction: column;
