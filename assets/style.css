@@ -1,7 +1,7 @@
 :root {
   --light: white;
   --dark: gray;
-  --header: linear-gradient(to right, rgb(255, 184, 166), rgb(163, 217, 253));
+  --header: linear-gradient(to right, #fdbebd, #a4dbff);
   --font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -23,6 +23,7 @@ html {
   color: var(--light);
   position: fixed;
   width: 100%;
+  z-index: 2;
 }
 
 .header h1 {
@@ -30,14 +31,14 @@ html {
   letter-spacing: 0.3em;
   font-family: var(--font);
   font-weight: lighter;
-  margin-top: 20px;
+  margin-top: 15px;
   text-transform: uppercase;
 }
 
 .header nav ul {
   display: flex;
   flex-direction: row;
-  margin-top: 20px;
+  margin-top: 15px;
   transition: 0.3s ease-in;
 }
 
@@ -56,18 +57,19 @@ html {
 
 .subtitle {
   background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/c907fd35452259.56f81712a1af8.gif");
-  /* opacity: 0.7; */
-  text-align: right;
   height: 400px;
   margin: 0;
 }
 
 #subtitle-text {
   font-family: var(--font);
-  font-size: 1.12em;
+  font-size: 1em;
   font-weight: normal;
-  color: rgb(41, 41, 41);
+  color: var(--light);
   letter-spacing: 0.15em;
+  margin-top: 87px;
+  background-color: var(--dark);
+  text-align: right;
 }
 
 main {
@@ -89,8 +91,9 @@ aside {
   letter-spacing: 0.15em;
   width: 100%;
   padding: 10px;
-  line-height: 14em;
-  border-right: 3px solid rgb(163, 217, 253);
+  margin-top: 30px;
+  /* line-height: 14em; */
+  border-right: 3px solid #fdbebd;
   height: 500px;
 }
 
@@ -111,6 +114,7 @@ p {
   font-family: var(--font);
   width: 100%;
   font-size: 1.1em;
+  letter-spacing: 0.1em;
 }
 
 #image-section {
@@ -134,20 +138,20 @@ p {
 
 a {
   text-decoration: none;
-  color: rgb(163, 217, 253);
+  color: #ffb4b3;
   letter-spacing: 0.1em;
 }
 
 img {
   width: 100%;
   margin: 10px;
-  border: 3px solid rgb(255, 184, 166);
+  border: 3px solid #a4dbff;
   opacity: 0.7;
   transition: 0.3s;
 }
 
 img:hover {
-  box-shadow: 0 0 3px 2px rgb(163, 217, 253);
+  box-shadow: 0 0 3px 2px #fdbebd;
   opacity: 1;
 }
 
@@ -174,7 +178,7 @@ h3 {
   position: relative;
   bottom: 44px;
   color: var(--light);
-  background-color: rgb(255, 184, 166);
+  background-color: #94c6e7;
   left: 1em;
   font-size: 0.9em;
   letter-spacing: 0.12em;
@@ -186,7 +190,7 @@ h3 {
 }
 
 li {
-  color: rgb(163, 217, 253);
+  color: #fdbebd;
   margin: 10px;
   display: inline-block;
   font-family: var(--font);
@@ -204,6 +208,12 @@ form {
   margin: 10px;
   text-align: left;
   letter-spacing: 0.1em;
+}
+
+.form-position {
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
 }
 
 input#fname {
@@ -229,7 +239,7 @@ textarea#message {
 
 textarea {
   height: 10em;
-  width: 29em;
+  width: 20em;
   margin-top: 10px;
   margin-left: 25px;
   border-radius: 2px;
@@ -242,15 +252,15 @@ textarea {
   height: 2em;
   letter-spacing: 0.1em;
   color: var(--light);
-  background-color: rgb(163, 217, 253);
+  background-color: #fdbebd;
   border-radius: 2px;
-  border: 1px solid rgb(153, 152, 150);
+  border: 1px solid #a4dbff;
 }
 
 #submit:hover {
-  color: var(--dark);
-  background-color: rgb(255, 184, 166);
-  box-shadow: 0 0 3px 2px rgb(255, 184, 166);
+  color: var(--light);
+  background-color: #a4dbff;
+  box-shadow: 0 0 3px 2px #a4dbff;
 }
 
 .footer h4 {
