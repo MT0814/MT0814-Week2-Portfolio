@@ -28,17 +28,17 @@ html {
 
 .header h1 {
   text-align: left;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.2em;
   font-family: var(--font);
-  font-weight: lighter;
-  margin-top: 15px;
+  font-weight: bold;
+  margin-top: 18px;
   text-transform: uppercase;
 }
 
 .header nav ul {
   display: flex;
   flex-direction: row;
-  margin-top: 15px;
+  margin-top: 18px;
   transition: 0.3s ease-in;
 }
 
@@ -48,7 +48,7 @@ html {
   text-decoration: none;
   font-size: 1.13em;
   font-weight: lighter;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.2em;
 }
 
 .header nav ul li a:hover {
@@ -64,7 +64,7 @@ html {
 #subtitle-text {
   font-family: var(--font);
   font-size: 1em;
-  font-weight: normal;
+  font-weight: bold;
   color: var(--light);
   letter-spacing: 0.15em;
   margin-top: 87px;
@@ -88,6 +88,7 @@ aside {
 .aside-text {
   color: var(--dark);
   font-family: var(--font);
+  font-weight: bold;
   letter-spacing: 0.15em;
   width: 100%;
   padding: 10px;
@@ -138,7 +139,7 @@ p {
 
 a {
   text-decoration: none;
-  color: #ffb4b3;
+  color: #fcaaa8;
   letter-spacing: 0.1em;
 }
 
@@ -176,11 +177,11 @@ h3 {
   font-family: var(--font);
   font-weight: lighter;
   position: relative;
-  bottom: 44px;
+  bottom: 71px;
   color: var(--light);
   background-color: #94c6e7;
   left: 1em;
-  font-size: 0.9em;
+  font-size: 1.2em;
   letter-spacing: 0.12em;
 }
 
@@ -203,17 +204,20 @@ ul {
 }
 
 form {
+  display: flex;
   color: var(--dark);
   font-family: var(--font);
   margin: 10px;
   text-align: left;
   letter-spacing: 0.1em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .form-position {
-  align-items: center;
-  justify-content: center;
-  vertical-align: middle;
+  width: 400px;
+  display: flex;
 }
 
 input#fname {
@@ -233,8 +237,8 @@ textarea#message {
   letter-spacing: 0.1em;
 }
 
-#fname #lname #message {
-  margin-left: 100px;
+label {
+  margin-top: 9px;
 }
 
 textarea {
@@ -255,6 +259,7 @@ textarea {
   background-color: #fdbebd;
   border-radius: 2px;
   border: 1px solid #a4dbff;
+  margin-top: 117px;
 }
 
 #submit:hover {
@@ -285,6 +290,10 @@ textarea {
 @media screen and (max-width: 768px) {
   aside h2 {
     font-size: 13px;
+  }
+  h3 {
+    display: flex;
+    font-size: 0.85em;
   }
 }
 
