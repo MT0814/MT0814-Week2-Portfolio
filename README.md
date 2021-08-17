@@ -3,7 +3,7 @@
 ## My Task
 
 Designed the whole portfolio webpage from head to footer. Tried to applied what I learned from the courses.
-Added image effect, internal link, photos, social network link, etc.
+Added image effect, internal links, photos, social network link, etc.
 
 ## User Story
 
@@ -33,7 +33,7 @@ WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 ```
 
-![index.html screenshot](./Portfolio.png)
+![index.html screenshot](./assets/screenshot.png)
 
 [Click me for website](https://mt0814.github.io/MT0814-Week2-Portfolio/)
 
