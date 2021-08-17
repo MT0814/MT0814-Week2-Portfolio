@@ -1,6 +1,6 @@
 :root {
   --light: white;
-  --dark: gray;
+  --dark: rgb(70, 70, 70);
   --header: linear-gradient(to right, #fdbebd, #a4dbff);
   --font: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -30,15 +30,15 @@ html {
   text-align: left;
   letter-spacing: 0.2em;
   font-family: var(--font);
+  font-size: 3em;
   font-weight: bold;
-  margin-top: 18px;
   text-transform: uppercase;
 }
 
 .header nav ul {
   display: flex;
   flex-direction: row;
-  margin-top: 18px;
+  margin-top: 10px;
   transition: 0.3s ease-in;
 }
 
@@ -46,8 +46,8 @@ html {
   display: flex;
   color: var(--light);
   text-decoration: none;
-  font-size: 1.13em;
-  font-weight: normal;
+  font-size: 1.14em;
+  font-weight: bold;
   letter-spacing: 0.2em;
 }
 
@@ -56,12 +56,13 @@ html {
 }
 
 .subtitle-image {
-  height: 800px;
+  /* height: 800px; */
   background-size: cover;
   background-position: center;
   max-width: auto;
   max-height: auto;
   display: block;
+  width: 100%;
   /* margin-bottom: 25px; */
 }
 
@@ -92,26 +93,26 @@ aside {
 }
 
 h2#about.aside-text {
-  height: 200px;
-  margin-top: 39px;
+  height: 16%;
+  margin-top: 37%;
 }
 
 h2#work.aside-text {
-  height: 800px;
-  margin-top: 60px;
+  height: 46%;
+  margin-top: 41%;
 }
 
 h2#contact.aside-text {
-  height: 400px;
-  margin-top: 67px;
+  height: 28%;
+  margin-top: 44%;
 }
+
 
 section {
   flex: 70%;
   background-color: var(--light);
   padding: 20px;
   margin-top: 25px;
-  float: left;
   margin-right: 30px;
 }
 
@@ -123,16 +124,19 @@ p {
   width: 100%;
   font-size: 1.1em;
   letter-spacing: 0.1em;
+  margin-bottom: 1%;
+  align-items: center;
 }
 
 #image-section {
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 25% 25%;
-  margin-top: 80px;
-  grid-gap: 4em;
-  width: 50em;
-  margin: 40px;
+  grid-template-columns: 44% 44%;
+  grid-template-rows: 39% 23% 25%;
+  grid-gap: 2.5em;
+  width: 60em;
+  /* margin-left: 23%; */
+  align-content: center;
+  margin-top: 6%;
 }
 
 .image {
@@ -200,7 +204,9 @@ h3 {
 
 .contact-container {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 5%;
+  align-content: center;
+  align-items: center;
 }
 
 li {
@@ -214,18 +220,23 @@ li {
 ul {
   letter-spacing: 20px;
   margin-top: 25px;
+  margin-bottom: 2%;
 }
 
 img.profile-photo {
   border-radius: 50%;
   width: 20%;
-  margin-top: 20px;
-
   border: 3px solid #a4dbff;
+
 }
 
 .profile-photo:hover {
   box-shadow: 0 0 3px 2px #fdbebd;
+}
+
+#welcome-text {
+  text-align: center;
+  margin-top: 2%;
 }
 
 form {
@@ -242,9 +253,9 @@ form {
 
 .form-position {
   width: 500px;
-  margin-left: 7em;
   display: flex;
 }
+
 
 input#fname {
   margin: 10px;
@@ -304,22 +315,32 @@ textarea {
   padding: 10px;
   background: var(--header);
 }
-/* 
-@media screen and (max-width: 992px) {
+
+/* @media screen and (max-width: 992px) {
   main,
   nav {
     display: flex,
   }
+  .aside-text {
+    display: flex;
+  }
 } */
 
 @media screen and (max-width: 768px) {
-  aside h2 {
+  .aside-text {
     font-size: 13px;
+    display: flex;
   }
   h3 {
     display: flex;
     font-size: 0.85em;
+    
   }
+  .subtitle-image section #image-section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
 }
 
 @media screen and (max-width: 576px) {
