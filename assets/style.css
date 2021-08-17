@@ -43,7 +43,7 @@ html {
 }
 
 .header nav ul li a {
-  display: inline-block;
+  display: flex;
   color: var(--light);
   text-decoration: none;
   font-size: 1.13em;
@@ -57,13 +57,13 @@ html {
 
 .subtitle-image {
   height: 800px;
-  width: 100%;
   margin-bottom: 25px;
   background-image: url(./discussions.jpeg);
   background-size: cover;
   background-position: center;
-  /* margin-top: 0; */
-  display: flex;
+  max-width: auto;
+  max-height: auto;
+  display: block;
 }
 
 #subtitle-text {
@@ -103,6 +103,21 @@ aside {
   height: 30em;
 }
 
+h2#about.aside-text {
+  height: 200px;
+  margin-top: 39px;
+}
+
+h2#work.aside-text {
+  height: 800px;
+  margin-top: 60px;
+}
+
+h2#contact.aside-text {
+  height: 400px;
+  margin-top: 67px;
+}
+
 section {
   flex: 70%;
   background-color: var(--light);
@@ -127,7 +142,7 @@ p {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 60% 20% 20%;
-  margin-top: 50px;
+  margin-top: 80px;
 }
 
 .image {
@@ -287,11 +302,11 @@ textarea {
   padding: 10px;
   background: var(--header);
 }
-
-/* @media screen and (max-width: 992px) {
+/* 
+@media screen and (max-width: 992px) {
   main,
   nav {
-    flex-direction: column;
+    display: flex,
   }
 } */
 
@@ -304,10 +319,10 @@ textarea {
     font-size: 0.85em;
   }
 }
-/* 
+
 @media screen and (max-width: 576px) {
   main,
   nav {
-    flex-direction: column;
+    font-size: 14px;
   }
-} */
+}
