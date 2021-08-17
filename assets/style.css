@@ -148,6 +148,10 @@ a {
   letter-spacing: 0.1em;
 }
 
+a:hover {
+  color: #a4dbff;
+}
+
 img {
   width: 100%;
   margin: 10px;
@@ -275,7 +279,7 @@ textarea {
 
 .footer h4 {
   color: var(--light);
-  font-weight: normal;
+  font-weight: bold;
   text-align: center;
   font-family: var(--font);
   font-size: 0.8em;
