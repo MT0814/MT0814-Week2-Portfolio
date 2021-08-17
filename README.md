@@ -3,6 +3,7 @@
 ## My Task
 
 Designed the whole portfolio webpage from head to footer. Tried to applied what I learned from the courses.
+Added image effect, internal link, photos, social network link, etc.
 
 ## User Story
 
