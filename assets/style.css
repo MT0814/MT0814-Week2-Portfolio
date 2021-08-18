@@ -107,7 +107,6 @@ h2#contact.aside-text {
   margin-top: 44%;
 }
 
-
 section {
   flex: 70%;
   background-color: var(--light);
@@ -137,6 +136,7 @@ p {
   /* margin-left: 23%; */
   align-content: center;
   margin-top: 6%;
+  width: 100%;
 }
 
 .image {
@@ -227,7 +227,6 @@ img.profile-photo {
   border-radius: 50%;
   width: 20%;
   border: 3px solid #a4dbff;
-
 }
 
 .profile-photo:hover {
@@ -255,7 +254,6 @@ form {
   width: 500px;
   display: flex;
 }
-
 
 input#fname {
   margin: 10px;
@@ -328,19 +326,17 @@ textarea {
 
 @media screen and (max-width: 768px) {
   .aside-text {
-    font-size: 13px;
+    font-size: 14px;
     display: flex;
   }
   h3 {
     display: flex;
     font-size: 0.85em;
-    
   }
   .subtitle-image section #image-section {
     display: flex;
     flex-wrap: wrap;
   }
-
 }
 
 @media screen and (max-width: 576px) {
