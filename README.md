@@ -35,6 +35,6 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 ![index.html screenshot](./assets/screenshot.png)
 
-[Click me for website](https://mt0814.github.io/MT0814-Week2-Portfolio/)
+[Click me for website](https://mt0814.github.io/Week2-Portfolio/)
 
 © 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
