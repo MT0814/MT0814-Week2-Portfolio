@@ -137,6 +137,7 @@ p {
   align-content: center;
   margin-top: 6%;
   width: 100%;
+  justify-content: center;
 }
 
 .image {
